@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>最終作業</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="css/all.css">
+
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/parallax.js"></script>
+    
+</head>
+<body>
+    <div class="wrap">
+        <!--這是bar-->
+        <div class="bar">
+            <ul>
+                <li><a href="#">
+                     <img src="images/facebookIcon.png" alt="FB"><span>粉絲團</span>
+                </a></li>
+                <li><a href="#">
+                    <img src="images/twitterIcon.png" alt="twitter"><span>追蹤我們</span>
+
+                </a></li>
+            </ul>
+
+        </div>
+
+        <!--這是header-->
+        <div class="header">
+            <a href="#">
+                <img src="images/logo.png" alt="home"></a>
+
+            <ul class="cart">
+                <li>
+                    <a href="#">首頁</a>
+
+                </li>
+                <li>
+                    <a href="#">產品介紹</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Html5基礎教學</a></li>
+                        <li><a href="#">響應式網站設計</a></li>
+                        <li><a href="#">jQuery實戰教學</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">聯絡我們</a>
+                    <ul class="dropdown">
+                        <li><a href="#">facebook</a></li>
+                        <li><a href="#">twitter</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="content">
+
+            <!--這是swiper+parallax banner區-->
+            <div class="bn">
+                 <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="images/banner.png" alt="輪播1"></div>
+                <div class="swiper-slide"><img src="images/banner.png" alt="輪播2"></div>
+                <div class="swiper-slide"><img src="images/walle.jpg" alt="輪播3"></div>
+
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+            </div>
+
+            <!--這是lightbox-->
+            <div class="course">
+                <div class="course-item">
+                    <a class="example-image-link" href="images/html.png" data-lightbox="roadtrip"> <img class="example-image" src="images/html.png" alt="image-1"></a>
+                    <h2> Html 5 基礎教學 </h2>
+                    <p>主流前端網站設計的基礎就在六角學院，在這裡不再是填鴨式教學，而是透過實際的範例，暸解正確的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方法
+                    </p>
+                </div>
+
+                <div class="course-item">
+                    <a class="example-image-link" href="images/rwd.png" data-lightbox="roadtrip"> <img class="example-image" src="images/rwd.png" alt="image-2"></a>
+                    <h2> 響應式網站設計 </h2>
+                    <p> 響應式網站設計(Responsive web design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的．六角學院將會提供業界響應式開發方法，讓學生了解行動版開發技巧．
+                    </p>
+                </div>
+
+                <div class="course-item">
+                    <a class="example-image-link" href="images/jQuery.png" data-lightbox="roadtrip"> <img class="example-image" src="images/jQuery.png" alt="image-3"></a>
+                    <h2> JQuery 實戰教學 </h2>
+                    <p> 本課程有以下特色
+                        <li>暸解變數的使用方法</li>
+                        <li>學習並操作DOM</li>
+                        <li>學習基本數學運算方法</li>
+                        <li>套件的操作及運用</li>
+                    </p>
+                </div>
+            </div>
+
+            <!--這是表格區-->
+            <div class="table">
+                <h1>線上及實體課程的差異</h1>
+                <table class="tableword">
+                    <tr>
+                        <th>項目</th>
+                        <th>Hex School 線上課程</th>
+                        <th>一般線上課程</th>
+                        <th>實體課程</th>
+                    </tr>
+                    <tr>
+                        <td>費用</td>
+                        <td class="gr">較低</td>
+                        <td>較低</td>
+                        <td>較高</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>學習效果</td>
+                        <td>一般</td>
+                        <td class="gr">較低</td>
+                        <td class="gr">很好</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Code review</td>
+                        <td class="gr">有</td>
+                        <td>無</td>
+                        <td>不一定</td>
+                        
+                    </tr>
+                    <tr>
+                        <td >課程更新速度</td>
+                        <td class="gr">普通</td>
+                        <td class="gr">普通</td>
+                        <td>較慢</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>多次複習</td>
+                        <td class="gr">可</td>
+                        <td>可</td>
+                        <td>不可</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>字幕</td>
+                        <td class="gr">有</td>
+                        <td>不一定</td>
+                        <td>板書</td>
+                        
+                    </tr>
+
+                </table>
+
+            </div>
+
+            <!--這是回覆區-->
+            <div class="reply">
+                <h1>對我們的課程有興趣嗎？<br>歡迎留下您的資料</h1>
+                <div class="replace">
+                    <form action="index.html">
+                        <div class="replycontent">
+                        <textarea name="content" id="content" placeholder="有任何想法嗎？歡迎留言告訴我們" cols="30" rows="10"></textarea>
+                        </div>
+
+                        <div class="r2">
+                            <div class="replayinf">
+                            <label for="person">姓名</label>
+                            <input id="person" type="text" placeholder="請輸入姓名" name="person">
+
+                            <label for="number">電話</label>
+                            <input id="number" type="text" placeholder="請輸入聯絡電話" name="number">
+
+                            <label for="mail">信箱</label>
+                            <input id="mail" type="text" placeholder="請輸入電子信箱" name="mail">
+
+                            </div>
+                            
+                            <div class="btn">
+                            <input type="button" value="送出">
+                            </div>
+                        </div>
+                        
+                        
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+        <!--這是footer-->
+        <div class="footer">
+            <a href="#"><img src="images/footerLogo.png" alt="底部logo"></a>
+            <ul>
+                <li>聯絡我們：<p>hexschool@gmail.com</p></li>
+                <li>電話：<p>0999123456</p></li>
+            </ul>
+        </div>
+
+        <!--這是上去的箭頭-->
+        <div class="top">
+            <a href="#"> <img src="images/f-top_256.png" alt=""></a>
+        </div>
+    </div>
+
+
+    <!--這是swiper初始化程式區-->
+    <script>
+    const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        loop: true,
+        autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+        parallax: true,
+        },
+      
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
+      
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      
+        // And if we need scrollbar
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+      });
+    </script>
+
+
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+    <script src="js/all.js"></script>
+    
+</body>
+</html>

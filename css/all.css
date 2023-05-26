@@ -1,0 +1,364 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 整體設計*/
+.wrap{
+    width: 100%;
+    font-family: 微軟正黑體;
+}
+
+/* Bar設計*/
+.bar{
+    background: #f6f6f6;
+    height: 35px;
+    
+}
+.bar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.bar ul li{
+    padding: 8px;
+}
+.bar ul li a{
+    text-decoration: none;
+    font-family: 微軟正黑體;
+    color: #416296;
+}
+
+.bar ul li a:hover{
+    color: #005ef6;
+}
+
+.cart{
+    position: relative;
+    z-index: 2;
+}
+
+.dropdown{
+    width: 100%;
+    max-height: 350px; 
+    position: absolute;
+    
+}
+
+.bar img{
+    margin-right: 5px;
+}
+
+/* header設計*/
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.header li a{
+    text-decoration: none;
+}
+
+.header .cart{
+    display: flex;
+    padding-right: 10px;
+    padding-top: 8px;
+    
+}
+
+.header .cart a:hover{
+    color: #017856;
+}
+
+.header .cart li a{
+    color: #00d197;
+    padding-right: 50px;
+    line-height: 2.5;  
+}
+
+.header .cart .dropdown li a{
+    color: #000;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+.header .cart .dropdown li a:hover{
+     font-weight: bold;
+}
+
+.header .cart ul{
+    display: none;
+    background-color: #ffffff80;  
+}
+
+.header .cart li ul li a{
+    padding: 5px;  
+}
+
+/* banner設計*/
+.content{
+    width: 100%;
+    font-family: 微軟正黑體;
+}
+
+
+
+.swiper-slide img{
+    max-width: 100%;
+    height: 345px;
+    z-index: 1;
+    
+}
+
+.parallax-window {
+    min-height: 345px;
+    background: transparent;
+}
+
+/* course設計*/
+.course{
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.course-item{
+    border: 1px solid gray;
+    border-radius: 3%;
+    width: 280px;
+    padding: 25px;
+    margin: 15px;
+    margin-top: 55px;
+    margin-bottom: 55px;
+    text-align: center;
+
+}
+
+.course-item h2{
+    font-size: 22px;
+    padding: 12px;
+}
+
+.course-item p {
+    box-sizing: border-box;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.course-item li{
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.course .course-item .courseimg{
+    padding-top: 20px;
+    padding-bottom: 29px;
+}
+
+.course .course-item .courseimg2{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* table設計*/
+.table h1{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.tableword th,.tableword td{
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+.tableword{
+    display: flex;
+    justify-content: center;
+}
+
+.tableword th{
+    padding: 10px;
+    padding-right: 40px;
+    padding-left: 40px;
+    background-color: #f7f7f7;
+    font-weight: 500;
+}
+
+.tableword td{
+    padding: 10px;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.gr{
+    color: #36b68c;
+}
+
+/* reply區設計*/
+.reply{
+    margin-top: 60px;
+    padding-top: 40px;
+    width: 100%;
+    height: 400px;
+    background-image: url(../images/gbg.png);
+    background-repeat: repeat-x;
+}
+.reply h1{
+    color: white;
+    font-size: 25px;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.replace{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+}
+
+.replace form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.replycontent{
+    padding-right: 40px;
+}
+
+.reply .replace .replycontent textarea{
+    padding: 20px;
+    margin: 5px;
+    border-radius: 5px;
+    height: 180px;
+    width: 450px;
+}
+
+.replayinf{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    
+}
+
+.reply .replace .r2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.reply .replace .replayinf label{
+    padding-top: 10px;
+    padding-bottom: 6px;
+}
+
+.reply .replace .replayinf input{
+    padding: 8px;
+    border: none;
+    border-radius: 3px;
+}
+
+.reply .replace .r2 .btn input{
+    padding: 3px 20px;
+    margin-top: 10px;
+    color: #f6f6f6;
+    background-color: #00d197;
+    font-size: 16px;
+    letter-spacing: 3px;
+    border: none;
+    border-radius: 3px;
+}
+
+.reply .replace .r2 .btn input:hover{
+    background-color: #00500f;
+    cursor: pointer;
+}
+
+
+/* footer設計*/
+.footer{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction:row ;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.footer ul{
+    padding-right: 50px;
+}
+
+.footer li{
+    font-size: 14px;
+    line-height: 1.5;
+    
+}
+
+.footer li p{
+   color: #ff5db9;
+   display: inline;
+}
+
+/* 箭頭設計*/
+.top{
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    
+  }
+  .top img{
+    width: 70px;
+  }
